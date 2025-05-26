@@ -74,13 +74,17 @@ WSGI_APPLICATION = "cms.wsgi.application"
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
+    # "default": {
+    #     "ENGINE": "django.db.backends.postgresql",
+    #     "NAME": "cms",
+    #     "USER": "cms_user",
+    #     "PASSWORD": "petillent429",
+    #     "HOST": "localhost",
+    #     "PORT": "",
+    # }
     "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "cms",
-        "USER": "cms_user",
-        "PASSWORD": "petillent429",
-        "HOST": "localhost",
-        "PORT": "",
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": "cms_webapp_db",
     }
 }
 
