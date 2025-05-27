@@ -2,13 +2,13 @@
 Template tags for markdown
 """
 
+import pdb
+import re
 from os import replace
-from django import template
-from django.template.defaultfilters import stringfilter
 
 import markdown as md
-import re
-import pdb
+from django import template
+from django.template.defaultfilters import stringfilter
 
 register = template.Library()
 
