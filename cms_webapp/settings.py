@@ -25,7 +25,9 @@ SECRET_KEY = "django-insecure-6)an65jr^*9$1g5h@+j*vh#%^!m@$f9om!7hs+)09si8jw_rp6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['jstathakis.pythonanywhere.com',]
+ALLOWED_HOSTS = [
+    "jstathakis.pythonanywhere.com",
+]
 
 
 # Application definition
@@ -50,7 +52,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "cms.urls"
+ROOT_URLCONF = "cms_webapp.urls"
 
 TEMPLATES = [
     {
@@ -67,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "cms.wsgi.application"
+WSGI_APPLICATION = "cms_webapp.wsgi.application"
 
 
 # Database

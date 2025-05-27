@@ -1,8 +1,9 @@
 from pathlib import Path
 from cms_mkdwn.models import MarkdownContent
-from cms.settings import BASE_DIR
+from cms_webapp.settings import BASE_DIR
 
-def ingest_from_dir(dirpath: str|Path):
+
+def ingest_from_dir(dirpath: str | Path):
     """
     ingest all the markdown files in `dirpath` into
     the database
@@ -25,8 +26,8 @@ def ingest_from_dir(dirpath: str|Path):
     for mc in mcs:
         mc.save()
 
+
 dirpath = BASE_DIR / "samples"
 
 if __name__ == "__main__":
-
     ingest_from_dir(dirpath=str(dirpath))

@@ -20,7 +20,7 @@ wheels = [
 ]
 
 [[package]]
-name = "cms"
+name = "cms_webapp"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
