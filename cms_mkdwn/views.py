@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.views import generic
 
 from cms_mkdwn.models import MarkdownContent

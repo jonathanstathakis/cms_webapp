@@ -17,8 +17,14 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
+from . import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", include("cms_mkdwn.urls")),
+    path("", views.HomeView.as_view(), name="home"),
+    path(
+        "cms/",
+        include("cms_mkdwn.urls", namespace="cms"),
+    ),
+    path("wine-wiki/", include("wine_wiki.urls", namespace="wine-wiki")),
 ]

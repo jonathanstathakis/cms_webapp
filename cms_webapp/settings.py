@@ -28,6 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "jstathakis.pythonanywhere.com",
+    "127.0.0.1",
 ]
 
 
@@ -41,6 +42,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "cms_mkdwn",
+    "wine_wiki",
 ]
 
 MIDDLEWARE = [
@@ -58,7 +60,7 @@ ROOT_URLCONF = "cms_webapp.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": ["cms_webapp/templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [

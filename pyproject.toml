@@ -5,8 +5,16 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "django>=5.2.1",
-    "ipython>=9.2.0",
-    "pathlib>=1.0.1",
-    "psycopg>=3.2.9",
+  "django>=5.2.1",
+  "ipython>=9.2.0",
+  "markdown>=3.8.1",
+  "pathlib>=1.0.1",
+  "psycopg>=3.2.9",
+  "wine-wiki-django",
 ]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.uv.sources]
+wine-wiki-django = { git = "https://github.com/jonathanstathakis/wine_wiki_django.git" }
