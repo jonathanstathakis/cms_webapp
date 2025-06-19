@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-6)an65jr^*9$1g5h@+j*vh#%^!m@$f9om!7hs+)09si8jw_rp6
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "jstathakis.pythonanywhere.com",
+    "winewiki.pythonanywhere.com",
     "127.0.0.1",
 ]
 
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "cms_mkdwn",
     "wine_wiki",
+    "cms_webapp"
 ]
 
 MIDDLEWARE = [
@@ -118,7 +119,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = "UTC"
+TIME_ZONE = "Australia/Sydney"
 
 USE_I18N = True
 
@@ -128,7 +129,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = 'static/' 
+
+STATIC_ROOT = os.path.join(BASE_DIR,"static")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
